@@ -185,6 +185,16 @@ header .logo {
   padding: 39px 10px 0;
 }
 
+@media (max-width:500px) {
+  .contact h4 {
+    font-size: 25px;
+  }
+
+  .contact p {
+    font-size: 20px;
+  }
+}
+
 .contact p {
   margin: 20px 0;
 }
@@ -193,6 +203,13 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+@media (max-width:500px) {
+  footer p {
+    font-size:25px;
+    margin-bottom: 10px;
+  }
 }
 
 /*New code starts here */
@@ -212,6 +229,24 @@ header {
   }
 }
 
+@media (max-width:500px) {
+
+  header nav a {
+    font-size: 26px;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    margin: 10px 0;
+    border-top: 1px solid black;
+    padding:17px 0;
+}
+
+  header nav .contact-link {
+    border-bottom: 1px solid black;
+  }
+
+}
+
 .cta {
 	display: flex;
 }
@@ -223,12 +258,62 @@ header {
   }
 }
 
+@media (max-width:500px) {
+  .cta {
+    margin-top: -66px;
+    margin-bottom: -35px;
+
+  }
+}
+
 .top-content {
 	display: flex;
 }
 
+@media (max-width:500px) {
+  .top-content{
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .top-content .text-content {
+    margin-top: 46px;
+  }
+
+  .top-content .text-content p {
+    width:200%;
+    font-size:28px;
+  }
+
+.top-content .text-content h4 {
+  font-size:35px;
+  margin-bottom:39px;
+}
+}
+
 .bottom-content {
 	display: flex;
+}
+
+@media (max-width:500px) {
+  .bottom-content{
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .bottom-content .text-content {
+    margin-top: 46px;
+  }
+
+  .bottom-content .text-content p {
+    width:272%;
+    font-size:28px;
+  }
+
+.bottom-content .text-content h4 {
+  font-size:35px;
+  margin-bottom:39px;
+}
 }
 
 .box {
